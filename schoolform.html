@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>南方之不一定用得到表格</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<form>
+		<div class="container">
+		<div class="header">
+			<img src="logo.png" width="950" height="350">
+		</div>
+		<div class="inst">
+			Instructions:
+			<ol>
+				<li>NO Instructions</li>
+				<li>Again NO</li>
+			</ol>
+		</div>
+	</div>
+	<hr>
+	<div class="form-container">
+		<div class="column-box" style="border: 2px solid lightblue;line-height: 35px;border-radius: 5px;">
+			<h2 style="color: white;background-color: lightblue; margin: 0; padding: 5px;">1. 入学学期 & 资料 - Intake & choices</h2>
+			<div class="first-selection" style="padding: 0px 10px;">
+			<p style="display: inline-block;">入学年份与梯次*<br>Year/Intake</p>
+			<br><input id="intake" type="radio" name="intake" value="2020/Aug" required>
+			<label>2020/Aug</label>
+			<input id="intake" type="radio" name="intake" value="2020/May" required>
+			<label>2020/May</label>
+			<hr>
+			<p>申请科系 - Choice of Programme</p>
+			<label>第一志愿*<br>1st Choice</label>
+			<select style="margin-left: 20px; width: 50%">
+				<option>Bachelor of Arts (Honours) In Business Administration - 商业行政(荣誉)学士课程</option>
+				<option>Bachelor of Arts (Honours) In Chinese Language & Literature - 中文(荣誉)学士学位</option>
+				<option>Bachelor of Arts (Honours) in Counseling & Psychology - 咨商与心理学(荣誉)学士课程</option>
+				<option>Bachelor of Arts (Honours) in Counseling & Psychology - 咨商与心理学(荣誉)学士课程</option>
+				<option>Bachelor of Early Childhood Education - 幼儿教育学士课程</option>
+			</select>
+			<br>
+			<label">第二志愿*<br>2st Choice</label>
+			<select style="margin-left: 20px; width: 50%">
+				<option>Bachelor of Arts (Honours) In Business Administration - 商业行政(荣誉)学士课程</option>
+				<option>Bachelor of Arts (Honours) In Chinese Language & Literature - 中文(荣誉)学士学位</option>
+				<option>Bachelor of Arts (Honours) in Counseling & Psychology - 咨商与心理学(荣誉)学士课程</option>
+				<option>Bachelor of Arts (Honours) in Counseling & Psychology - 咨商与心理学(荣誉)学士课程</option>
+				<option>Bachelor of Early Childhood Education - 幼儿教育学士课程</option>
+			</select>
+			<br>
+			<label>第三志愿*<br>3st Choice</label>
+			<select style="margin-left: 20px; width: 50%">
+				<option>Bachelor of Arts (Honours) In Business Administration - 商业行政(荣誉)学士课程</option>
+				<option>Bachelor of Arts (Honours) In Chinese Language & Literature - 中文(荣誉)学士学位</option>
+				<option>Bachelor of Arts (Honours) in Counseling & Psychology - 咨商与心理学(荣誉)学士课程</option>
+				<option>Bachelor of Arts (Honours) in Counseling & Psychology - 咨商与心理学(荣誉)学士课程</option>
+				<option>Bachelor of Early Childhood Education - 幼儿教育学士课程</option>
+			</select>
+			<br>
+			<p style="display: inline-block;">申请住宿 *<br>Hostel</p>
+			<input value="yes" type="radio" name="hostel" style="margin-left: 50px;" required>
+			<label>是 Yes</label>
+			<input value="no" type="radio" name="hostel" required>
+			<label>否 No</label>
+			<br>
+			<label>奖贷申请<br>Scholarship</label>
+			<select style="margin-left: 10px; width: 50%">
+				<option>多元文化奖学金 - Multi-Cultural Scholarship</option>
+				<option>新生奖学金 - New Student Scholarship</option>
+				<option>学优生奖学金 - Excellent Students Full Scholarship</option>
+			</select>
+			</div>
+		</div>
+
+		<div class="column-box" style="margin-top:25px; border: 2px solid grey;line-height: 35px;border-radius: 5px;">
+			<h2 style="color: white;background-color: grey; margin: 0; padding: 5px;">2. 个人资料 - Personal Information</h2>
+			<div class="first-selection" style="padding: 0px 10px;">
+			<label>中文姓名<br>Chinese name</label>
+			<input id="chinesename" type="text" name="chinesename" required ><br>
+			<label>英文姓名*<br>English name</label>
+			<input id="englishname" type="text" name="englishname" required ><br>
+			<p style="display: inline-block;">性别*<br>Gender</p>
+			<input  value="male" type="radio" name="gender" required>
+			<label>男 Male</label>
+			<input  type="radio" value="female" name="gender" required>
+			<label>女 Female</label><br>
+			<label>出生日期*<br>Date of Birth</label>
+			<input  type="text" id="dateofbirth" name="dateofbirth" placeholder="31/12/1999" required><br>
+			<p style="display: inline-block;">国际*<br>National</p>
+			<select>
+				<option>请选择 - Click to choose</option>   
+				<option>Malaysian</option>
+				<option>Bangla</option>
+			</select><br>
+			<label>身份证件号*<br>NRIC No.</label>
+			<input  type="number" id="ics1" name="ics1" placeholder="000000-00-0000" required><br>
+			<label>宗族<br>Religion</label>
+			<select>
+				<option>请选择 - Click to choose</option>   
+				<option>Malay</option>
+				<option>Cina</option>
+				<option>Indian</option>
+				<option>Bangla</option>
+			</select><br>
+			<label>地址*<br>Address</label>
+			<input  type="text" id="address" name="address" required><br>
+			<label>电子邮件*<br>Email</label>
+			<input  type="email" id="email" name="email" placeholder="wtf@whatmail.com" required>
+			</div>
+		</div>
+
+		<div class="column-box" style="margin-top:25px; border: 2px solid purple;line-height: 35px;border-radius: 5px;">
+			<h2 style="color: white;background-color: purple; margin: 0; padding: 5px;">3. 家庭资料 - Family details</h2>
+			<div class="first-selection" style="padding: 0px 10px;">
+				<p style="display: inline-block;">监护人*<br>Guardian</p>
+				<input  type="radio" value="father" name="guardian" required>
+				<label>父亲 Father</label>
+				<input  type="radio" value="mother" name="guardian" required>
+				<label>母亲 Mother</label>
+				<input  type="radio" value="guardian" name="guardian" required>
+				<label>监护人 Guardian</label><br>
+				<label>中文姓名*<br>Chinese Name</label>
+				<input id="chiname" type="type" name="chiname" required placeholder="武则天"><br>
+				<label>英文姓名*<br>English Name</label>
+				<input id="engname" type="type" name="engname" required
+				placeholder="John Wick"><br>
+				<label>身份证号*<br>Identity Card No.</label>
+				<input id="ics" type="number" name="ics" placeholder="000000-00-0000" required><br>
+				<label>联络电话*<br>Phone number</label>
+				<input id="phoney" type="number" name="phoney" placeholder="Exp:0161234567" required><br>
+				<label>家庭年收入*<br>Household Annual Income</label>
+				<select>
+					<option>Less than RM5000</option>
+					<option>RM5000 to RM10000</option>
+					<option>RM10000 to RM20000</option>
+					<option>RM20000 or More</option>
+					<option>Broke as a Joke</option>
+					<option>Billionaire</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="column-box" style="margin-top:25px; border: 2px solid green;line-height: 35px;border-radius: 5px;">
+			<h2 style="color: white;background-color: green; margin: 0; padding: 5px;">4. 学历 - Academic Qualification</h2>
+			<div class="first-selection" style="padding: 0px 10px;">
+				<label>中学*<br>Secondary School</label><br>
+				<input id="state1" type="text" name="state1" placeholder="State" required><br>
+				<input id="schoolname1" type="text" name="schoolname1" placeholder="School Name" required><br>
+				<input id="year1" type="text" name="year1" placeholder="Year" required><br>
+				<label>小学*<br>Primary School</label><br>
+				<input id="state2" type="text" name="state2" placeholder="State" required><br>
+				<input id="college2" type="text" name="prisch2" placeholder="School Name" required><br>
+				<input id="year2" type="text" name="year2" placeholder="Year" required>
+			</div>
+		</div>
+
+		<div class="column-box" style="margin-top:25px; border: 2px solid yellow;line-height: 35px;border-radius: 5px;">
+			<h2 style="color: white;background-color: yellow; margin: 0; padding: 5px;">5. 入学成绩 - Certificate & Grades</h2>
+			<div class="first-selection" style="padding: 0px 10px;">
+				<label>证书名称*<br>Certificate</label>
+				<select>
+					<option>SPM</option>
+					<option>O-Level</option>
+					<option>Never School</option>
+					<option>A-Level</option>
+					<option>STPM</option>
+					<option>Others</option>
+				</select>
+					<br>
+					        <div class="form-group row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-10">
+            <table class="table table-hover table-striped">
+            	<p>最好的五科*</p>
+              <thead>
+                <tr>
+                  <td class="col-sm-1"><strong>#</strong></td>
+                  <td class="col-sm-6"><strong>科目 Subject</strong></td>
+                  <td class="col-sm-5"><strong>等级 Grade</strong></td>
+                </tr>
+              </thead>
+              <tbody ng-show="'other' != form.certapplied">
+                                                              <tr>
+                  <td class="col-sm-1">1.</td>
+                  <td class="col-sm-6">
+                    <select name="bestfivesubject1" id="bestfivesubject1" class="form-control" ng-model="form.bestfivesubject1" ng-options="subject.sub_id as subject.subject for subject in list.certSubjectList" ng-init="form.bestfivesubject1=''" ng-required="'other' != form.certapplied">
+                      <option>请选择 - Click to choose</option>                      <option>请选择 - Click to choose</option>
+                      <option>English</option>
+                      <option>Chinese</option>
+                      <option>Bahasa Malay</option>
+                      <option>Math</option>
+                      <option>Add Math</option>
+                      <option>Chemistry</option>
+                      <option>Physics</option>                    </select>
+                  </td>
+                  <td class="col-sm-5">
+                    <select name="bestfivegrade1" id="bestfivegrade1" class="form-control" ng-model="form.bestfivegrade1" ng-options="result.result_id as result.result for result in list.certResultList" ng-init="form.bestfivegrade1=''" ng-required="'other' != form.certapplied">
+                      <option>A</option>
+                      <option>B</option>
+                      <option>C</option>
+                      <option>D</option>
+                    </select>
+                  </td>
+                </tr>
+                                                                <tr>
+                  <td class="col-sm-1">2.</td>
+                  <td class="col-sm-6">
+                    <select name="bestfivesubject2" id="bestfivesubject2" class="form-control" ng-model="form.bestfivesubject2" ng-options="subject.sub_id as subject.subject for subject in list.certSubjectList" ng-init="form.bestfivesubject2=''" ng-required="'other' != form.certapplied">
+                      <option>请选择 - Click to choose</option>   
+                      <option>English</option>
+                      <option>Chinese</option>
+                      <option>Bahasa Malay</option>
+                      <option>Math</option>
+                      <option>Add Math</option>
+                      <option>Chemistry</option>
+                      <option>Physics</option>
+                    </select>
+                  </td>
+                  <td class="col-sm-5">
+                    <select name="bestfivegrade2" id="bestfivegrade2" class="form-control" ng-model="form.bestfivegrade2" ng-options="result.result_id as result.result for result in list.certResultList" ng-init="form.bestfivegrade2=''" ng-required="'other' != form.certapplied">
+                      <option>A</option>
+                      <option>B</option>
+                      <option>C</option>
+                      <option>D</option>
+                    </select>
+                  </td>
+                </tr>
+                                                                <tr>
+                  <td class="col-sm-1">3.</td>
+                  <td class="col-sm-6">
+                    <select name="bestfivesubject3" id="bestfivesubject3" class="form-control" ng-model="form.bestfivesubject3" ng-options="subject.sub_id as subject.subject for subject in list.certSubjectList" ng-init="form.bestfivesubject3=''" ng-required="'other' != form.certapplied">
+                      <option>请选择 - Click to choose</option>
+                      <option>English</option>
+                      <option>Chinese</option>
+                      <option>Bahasa Malay</option>
+                      <option>Math</option>
+                      <option>Add Math</option>
+                      <option>Chemistry</option>
+                      <option>Physics</option>
+                    </select>
+                  </td>
+                  <td class="col-sm-5">
+                    <select name="bestfivegrade3" id="bestfivegrade3" class="form-control" ng-model="form.bestfivegrade3" ng-options="result.result_id as result.result for result in list.certResultList" ng-init="form.bestfivegrade3=''" ng-required="'other' != form.certapplied">
+                      <option>A</option>
+                      <option>B</option>
+                      <option>C</option>
+                      <option>D</option>
+                    </select>
+                  </td>
+                </tr>
+                                                                <tr>
+                  <td class="col-sm-1">4.</td>
+                  <td class="col-sm-6">
+                    <select name="bestfivesubject4" id="bestfivesubject4" class="form-control" ng-model="form.bestfivesubject4" ng-options="subject.sub_id as subject.subject for subject in list.certSubjectList" ng-init="form.bestfivesubject4=''" ng-required="'other' != form.certapplied">
+                      <option>请选择 - Click to choose</option>
+                      <option>English</option>
+                      <option>Chinese</option>
+                      <option>Bahasa Malay</option>
+                      <option>Math</option>
+                      <option>Add Math</option>
+                      <option>Chemistry</option>
+                      <option>Physics</option>
+                    </select>
+                  </td>
+                  <td class="col-sm-5">
+                    <select name="bestfivegrade4" id="bestfivegrade4" class="form-control" ng-model="form.bestfivegrade4" ng-options="result.result_id as result.result for result in list.certResultList" ng-init="form.bestfivegrade4=''" ng-required="'other' != form.certapplied">
+                      <option>A</option>
+                      <option>B</option>
+                      <option>C</option>
+                      <option>D</option>
+                    </select>
+                  </td>
+                </tr>
+                                                                <tr>
+                  <td class="col-sm-1">5.</td>
+                  <td class="col-sm-6">
+                    <select name="bestfivesubject5" id="bestfivesubject5" class="form-control" ng-model="form.bestfivesubject5" ng-options="subject.sub_id as subject.subject for subject in list.certSubjectList" ng-init="form.bestfivesubject5=''" ng-required="'other' != form.certapplied">
+                      <option>请选择 - Click to choose</option>
+                      <option>English</option>
+                      <option>Chinese</option>
+                      <option>Bahasa Malay</option>
+                      <option>Math</option>
+                      <option>Add Math</option>
+                      <option>Chemistry</option>
+                      <option>Physics</option>
+                    </select>
+                  </td>
+                  <td class="col-sm-5">
+                    <select name="bestfivegrade5" id="bestfivegrade5" class="form-control" ng-model="form.bestfivegrade5" ng-options="result.result_id as result.result for result in list.certResultList" ng-init="form.bestfivegrade5=''" ng-required="'other' != form.certapplied">
+                      <option>A</option>
+                      <option>B</option>
+                      <option>C</option>
+                      <option>D</option>
+                    </select>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+	  <input type="submit" name="submit" value="Submit" class="submit" onclick="clickdat()">
+	</div>
+  </form>
+  </div>
+</div>
+<script type="text/ng-template" id="confirmation.html"></script>
+
+</body>
+	<script type="text/javascript">
+		function clickdat(){
+			alert("Do It Again")
+        }
+
+		function checkcolumn21(){
+			var a = document.getElementById('chinesename');
+			var aa = a.value.length;
+			if (aa === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function checkcolumn22(){
+			var b = document.getElementById('englishname');
+			var bb = b.value.length;
+			if (bb === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function checkcolumn23(){
+			var c = document.getElementById('dateofbirth');
+			var cc = c.value.length;
+			if (cc === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function checkcolumn24(){
+			var d = document.getElementById('nricno1');
+			var dd = d.value.length;
+			if (dd === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function checkcolumn25(){
+			var e = document.getElementById('address');
+			var ee = e.value.length;
+			if (ee === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function checkcolumn26(){
+			var f = document.getElementById('email');
+			var ff = f.value.length;
+			if (ff === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function checkcolumn31(){
+			var g = document.getElementById('pchinesename');
+			var gg = g.value.length;
+			if (gg === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function checkcolumn32(){
+			var h = document.getElementById('penglishname');
+			var hh = h.value.length;
+			if (hh === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function checkcolumn33(){
+			var i = document.getElementById('nricno2');
+			var ii = i.value.length;
+			if (ii === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function checkcolumn34(){
+			var j = document.getElementById('phoneno');
+			var jj = j.value.length;
+			if (jj === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function checkcolumn41(){
+			var k = document.getElementById('state1');
+			var kk = k.value.length;
+			if (kk === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function checkcolumn42(){
+			var l = document.getElementById('schoolname1');
+			var ll = l.value.length;
+			if (ll === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function checkcolumn43(){
+			var m = document.getElementById('year1');
+			var mm = m.value.length;
+			if (mm === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function checkcolumn44(){
+			var n = document.getElementById('state2');
+			var nn = n.value.length;
+			if (nn === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function checkcolumn45(){
+			var o = document.getElementById('college2');
+			var oo = o.value.length;
+			if (oo === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function checkcolumn46(){
+			var p = document.getElementById('year2');
+			var pp = p.value.length;
+			if (pp === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function checkcolumn51(){
+			var q = document.getElementById('certificate');
+			var qq = q.value.length;
+			if (qq === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}function checkcolumn52(){
+			var r = document.getElementById('sub1');
+			var rr = r.value.length;
+			if (rr === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}function checkcolumn53(){
+			var s = document.getElementById('gra1');
+			var ss = s.value.length;
+			if (s === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}function checkcolumn54(){
+			var t = document.getElementById('sub2');
+			var tt = t.value.length;
+			if (tt === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}function checkcolumn55(){
+			var u = document.getElementById('gra2');
+			var uu = u.value.length;
+			if (uu === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}function checkcolumn56(){
+			var v = document.getElementById('sub3');
+			var vv = v.value.length;
+			if (vv === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}function checkcolumn57(){
+			var w = document.getElementById('gra3');
+			var ww = w.value.length;
+			if (ww === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}function checkcolumn58(){
+			var x = document.getElementById('sub4');
+			var xx = x.value.length;
+			if (xx === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}function checkcolumn59(){
+			var y = document.getElementById('gra4');
+			var yy = y.value.length;
+			if (yy === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}function checkcolumn510(){
+			var z = document.getElementById('sub5');
+			var zz = z.value.length;
+			if (zz === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}function checkcolumn511(){
+			var z1 = document.getElementById('gra5');
+			var z11 = z1.value.length;
+			if (z11 === 0) {
+				alert('Sorry,fill the required column first');
+				return false;
+			}else{
+				return true;
+			}
+		}
+		function check(){
+			if (checkcolumn21()) {
+				if (checkcolumn22()) {
+					if (checkcolumn23()) {
+						if(checkcolumn24()){
+							if (checkcolumn25()) {
+								if (checkcolumn26()) {
+									if (checkcolumn31()) {
+										if (checkcolumn32()) {
+											if (checkcolumn33()) {
+												if (checkcolumn34()) {
+													if (checkcolumn41()) {
+														if (checkcolumn42()) {
+															if (checkcolumn43()) {
+																if (checkcolumn44()) {
+																	if (checkcolumn45()) {
+																		if (checkcolumn46()) {
+																			if (checkcolumn51()) {
+																				if (checkcolumn52()) {
+																					if (checkcolumn53()) {
+																						if (checkcolumn54()) {
+																							if (checkcolumn55()) {
+																								if (checkcolumn56()) {
+																									if (checkcolumn57()) {
+																										if (checkcolumn58()) {
+																											if (checkcolumn59()) {
+																												if (checkcolumn510()) {
+																													if (checkcolumn511()) {
+																														alert('Submited')
+																													}
+																												}
+																											}
+																										}
+																									}
+																								}
+																							}
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	</script>
+</html>
